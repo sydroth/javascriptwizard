@@ -13,7 +13,7 @@ SPECIFICATIONS
  - [ ] User can pass if they cannot play a card after three draws.
  - [ ] User can set the suite if an eight is played.
  
- STRETCH SPECS
+STRETCH SPECS
 
  - [ ] Animation/UI corresponding to events in game
  - [ ] Deploying the web app via Heroku or similar service
@@ -24,3 +24,11 @@ SPECIFICATIONS
 LICENSE
  
  - [ ] The artifact produced is properly licensed, preferably with the MIT license.
+
+SKETCHS 
+ 
+User Interface: 
+![fullsizerender-1](https://cloud.githubusercontent.com/assets/18561576/17112468/0c1beb02-525b-11e6-86b7-152013ec2b6c.jpg)
+
+State loop:
+![fullsizerender](https://cloud.githubusercontent.com/assets/18561576/17112477/14b86e20-525b-11e6-9d74-f7ee618d415d.jpg)
