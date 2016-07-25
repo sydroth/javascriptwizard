@@ -6,40 +6,40 @@ CONTEXT
 
 SPECIFICATIONS
 
- []Programming Step-by-Step: Object-Oriented JavaScript
+ [] Programming Step-by-Step: Object-Oriented JavaScript
  
- []JQuery Basics
+ [] JQuery Basics
  
- []JavaScript Basics
+ [] JavaScript Basics
  
- []JavaScript Loops, Arrays and Objects
+ [] JavaScript Loops, Arrays and Objects
  
- []Node.js Basics
+ [] Node.js Basics
  
- []Ember.js
+ [] Ember.js
  
- []Build a Simple Dynamic Site with Node.js
+ [] Build a Simple Dynamic Site with Node.js
  
- []npm Basics
+ [] npm Basics
  
- []Express Basics
+ [] Express Basics
  
- []Deploy a Node Application to Heroku
+ [] Deploy a Node Application to Heroku
  
- []JavaScript Unit Testing
+ [] JavaScript Unit Testing
  
- []Build a REST API with Express
+ [] Build a REST API with Express
  
- []The Module Pattern in JavaScript
+ [] The Module Pattern in JavaScript
  
- []Using JQuery Plugins
+ [] Using JQuery Plugins
  
- []Modifying Data with SQL
+ [] Modifying Data with SQL
  
- []Reporting with SQL
+ [] Reporting with SQL
  
- []SQL Basics
+ [] SQL Basics
  
- []Mongo Basics
+ [] Mongo Basics
 
- []The artifact produced is properly licensed, preferably with the MIT license.
+ [] The artifact produced is properly licensed, preferably with the MIT license.
