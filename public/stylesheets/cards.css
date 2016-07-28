@@ -1,0 +1,79 @@
+.card {
+  width: 69px;
+  height: 94px;
+  background-image: url('/images/cards.png');
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.card-hidden {  
+  background-image: none;
+  background-color: #fc331d;
+}
+
+.played-card {}
+
+.card-ace-clubs { background-position: top -2px left -2px; }
+.card-ace-spades { background-position: top 292px left -2px; }
+.card-ace-hearts { background-position: top 194px left -2px; }
+.card-ace-diamonds { background-position: top 96px left -2px; }
+
+.card-two-clubs { background-position: top -2px left 875px; }
+.card-two-spades { background-position: top 292px left 875px; }
+.card-two-hearts { background-position: top 194px left 875px; }
+.card-two-diamonds { background-position: top 96px left 875px; }
+
+.card-three-clubs { background-position: top -2px left 802px; }
+.card-three-spades { background-position: top 292px left 802px; }
+.card-three-hearts { background-position: top 194px left 802px; }
+.card-three-diamonds { background-position: top 96px left 802px; }
+
+.card-four-clubs { background-position: top -2px left 729px; }
+.card-four-spades { background-position: top 292px left 729px; }
+.card-four-hearts { background-position: top 194px left 729px; }
+.card-four-diamonds { background-position: top 96px left 729px; }
+
+.card-five-clubs { background-position: top -2px left 656px; }
+.card-five-spades { background-position: top 292px left 656px; }
+.card-five-hearts { background-position: top 194px left 656px; }
+.card-five-diamonds { background-position: top 96px left 656px; }
+
+.card-six-clubs { background-position: top -2px left 583px; }
+.card-six-spades { background-position: top 292px left 583px; }
+.card-six-hearts { background-position: top 194px left 583px; }
+.card-six-diamonds { background-position: top 96px left 583px; }
+
+.card-seven-clubs { background-position: top -2px left 510px; }
+.card-seven-spades { background-position: top 292px left 510px; }
+.card-seven-hearts { background-position: top 194px left 510px; }
+.card-seven-diamonds { background-position: top 96px left 510px; }
+
+.card-eight-clubs { background-position: top -2px left 437px; }
+.card-eight-spades { background-position: top 292px left 437px; }
+.card-eight-hearts { background-position: top 194px left 437px; }
+.card-eight-diamonds { background-position: top 96px left 437px; }
+
+.card-nine-clubs { background-position: top -2px left 364px; }
+.card-nine-spades { background-position: top 292px left 364px; }
+.card-nine-hearts { background-position: top 194px left 364px; }
+.card-nine-diamonds { background-position: top 96px left 364px; }
+
+.card-ten-clubs { background-position: top -2px left 291px; }
+.card-ten-spades { background-position: top 292px left 291px; }
+.card-ten-hearts { background-position: top 194px left 291px; }
+.card-ten-diamonds { background-position: top 96px left 291px; }
+
+.card-jack-clubs { background-position: top -2px left 218px; }
+.card-jack-spades { background-position: top 292px left 218px; }
+.card-jack-hearts { background-position: top 194px left 218px; }
+.card-jack-diamonds { background-position: top 96px left 218px; }
+
+.card-queen-clubs { background-position: top -2px left 145px; }
+.card-queen-spades { background-position: top 292px left 145px; }
+.card-queen-hearts { background-position: top 194px left 145px; }
+.card-queen-diamonds { background-position: top 96px left 145px; }
+
+.card-king-clubs { background-position: top -2px left 72px; }
+.card-king-spades { background-position: top 292px left 72px; }
+.card-king-hearts { background-position: top 194px left 72px; }
+.card-king-diamonds { background-position: top 96px left 72px; }
