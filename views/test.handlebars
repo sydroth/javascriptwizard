@@ -1,0 +1,11 @@
+<div id="dump"></div>
+
+<script>
+  var deck = new Deck()
+  deck.shuffle()
+
+  for( var i = 0; i < deck.cards.length; i++ ) {
+    $("#dump").append( '<p>' + deck.cards[ i ].className() + '</p>');
+  }
+</script>
+
