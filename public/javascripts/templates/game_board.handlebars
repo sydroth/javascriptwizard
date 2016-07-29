@@ -1,0 +1,47 @@
+<div class="opponent">
+  <div class="player-info">
+    <img src="/images/opponent.png" alt="Opponent" />
+    <h2>Opponent</h2>
+  </div>
+
+  <div class="hand">
+    {{#each opponent.hand}}
+    <div class="card card-hidden"></div>
+    {{/each}}
+  </div>
+</div>
+
+<div class="played-cards">
+  {{!-- played card should be showing a single stack with only the last played card --}}
+  <div class="unplayed-deck">
+    <div class="card card-hidden" onclick="drawCard()"></div>
+  </div>
+
+  <div class="last-played-card">
+    <div class="card {{lastPlayedCard.cardClass}}"></div>
+  </div>
+</div>
+
+<div class="player">
+  <div class="hand">
+    {{#each player.hand}}
+      <div class="card {{this.cardClass}} player-card" data-number={{this.number}} data-suit={{this.suit}}></div>
+    {{/each}}
+  </div>
+
+  <div class="actions">
+    {{message}}
+    {{#if playerCanGo}}
+      <button class="player-pass">Pass</button>
+      {{#if playerCanDraw}}
+      <button class="draw-card">Draw Card</button>
+      {{/if}}
+    {{/if}}
+
+  </div>
+
+  <div class="player-info">
+    <img src="/images/opponent.png" alt="Opponent" />
+    <h2>Player</h2>
+  </div>
+</div>

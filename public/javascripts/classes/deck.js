@@ -6,6 +6,8 @@ function Deck() {
       this.cards.push( new Card( Card.NUMBERS[ j ], Card.SUITS[ i ] ))
     }
   }
+
+  this.shuffle()
 }
 
 Deck.prototype.shuffle = function() {
@@ -16,4 +18,8 @@ Deck.prototype.shuffle = function() {
     this.cards[ i ] = this.cards[ random ]
     this.cards[ random ] = temp
   }
+}
+
+Deck.prototype.takeCard = function() {
+  return this.cards.pop()
 }

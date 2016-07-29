@@ -110,3 +110,7 @@ body {
 .player-info h2 {
   margin-left: 10px;
 }
+
+.actions {
+  height: 40px;
+}

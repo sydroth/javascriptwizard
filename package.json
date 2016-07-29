@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=javascriptwizard:* nodemon ./bin/www"
+    "start": "DEBUG=javascriptwizard:* nodemon ./bin/www",
+    "compile": "handlebars ./public/javascripts/templates/* -f ./public/javascripts/templates.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
