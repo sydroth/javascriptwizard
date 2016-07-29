@@ -56,6 +56,8 @@ Game.prototype.playerCanDrawCard = function() {
 
 Game.prototype.doOpponentMove = function() {
   // Do Opponent's move
+  // loop over opponent's cards, and if there's a playable card, play it
+  // if no playable card, draw up to three times
 
   this.currentPlayer = this.player
   this.playerCanDraw = this.playerCanDrawCard()
