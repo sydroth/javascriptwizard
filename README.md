@@ -6,12 +6,16 @@ CONTEXT
 
 SPECIFICATIONS
 
- - [ ] Complete Codecademy's basic Javascript course
- - [ ] User and machine are each given seven randomly generated cards. 
- - [ ] User can play a card from their deck.
- - [ ] User can draw from the deck if they can't play a card.
+ - [X] Complete Codecademy's basic Javascript course
+ - [X] User and machine are each given seven randomly generated cards. 
+ - [X] User can play a card from their deck.
+ - [X] User can draw from the deck if they can't play a card.
  - [ ] User can pass if they cannot play a card after three draws.
  - [ ] User can set the suite if an eight is played.
+ - [ ] Opponent can determine if it has a valid card.
+ - [ ] Opponent will play a valid card if it has one.
+ - [ ] Opponent will draw a card from deck if it has no playable cards, up to three times until it gets a valid card.
+ - [ ] Opponent will pass if it cannot play a card.
  
 STRETCH SPECS
 
