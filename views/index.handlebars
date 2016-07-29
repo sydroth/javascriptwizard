@@ -1,55 +1,10 @@
 <div class="instructions-container">
-  <a href='#' onclick='overlay()' style= "color: #fc331d">Read the Rules</a>
+   <div class="row-buttons">
+   <a href='#' onclick='overlay()' class="readRules" >Read the Rules</a>
   {{> rules}}
+  <button id="start-game" class="menu-button">Begin a New Game</button>
+  </div>
 </div>
 
-<div class="tablebox" >
-  <div class="opponent">
-    <div class="player-info">
-      <img src="/images/opponent.png" alt="Opponent" />
-      <h2>Opponent</h2>
-    </div>
-
-    <div class="hand">
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-      <div class="card card-hidden"></div>
-    </div>
-  </div>
-
-  <div class="played-cards">
-    {{!-- played card should be showing a single stack with only the last played card --}}
-    <div class="unplayed-deck">
-      <div class="card card-hidden" onclick="drawCard()"></div>
-    </div>
-
-    <div class="last-played-card">
-      <div class="card card-ace-diamonds"></div>
-    </div>
-  </div>
-
-  <div class="player">
-    <div class="hand">
-      <div class="card card-three-clubs" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-five-diamonds" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-jack-hearts" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-nine-hearts" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-two-spades" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-queen-clubs" {{!-- onclick="playCard(this)" --}}></div>
-      <div class="card card-six-diamonds" {{!-- onclick="playCard(this)" --}}></div>
-    </div>
-
-    <div class="actions">
-      <button>Pass</button>
-    </div>
-
-    <div class="player-info">
-      <img src="/images/opponent.png" alt="Opponent" />
-      <h2>Player</h2>
-    </div>
-  </div>
+<div class="tablebox">
 </div>

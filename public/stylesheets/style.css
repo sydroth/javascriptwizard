@@ -16,6 +16,7 @@ body {
   border: 3px double;
   border-color: #feb041;
   background-color: white;
+  border-radius:10px;
 }
 
 .tablebox {
@@ -24,6 +25,7 @@ body {
   background: white;
   border: #feb041 3px double;
   margin: auto;
+  border-radius: 10px;
 
   display: flex;
   flex-direction: column;
@@ -58,10 +60,6 @@ body {
   background-color: #fc331d; 
 }
 
-.instructions-container {
-  width: 800px;
-  margin: auto;
-}
 
 #overlay {
   border: #feb041 3px double;
@@ -80,15 +78,9 @@ body {
   display: block;
   margin: 0 auto;
   position: absolute;
+  border-radius: 10px;
 }
 
-.readRules {
-  margin: 0 auto;
-  color: #fc331d;
-  position: relative;
-  padding-top:3em;
-  padding-bottom: 3em;
-}
 
 .hand, .played-cards {
   display: flex;
@@ -99,6 +91,7 @@ body {
   margin: auto;
   width: 300px;
   border: 1px solid black;
+  border-radius:10px;
   display: flex;
   flex-direction: row;
 }
@@ -109,4 +102,59 @@ body {
 
 .player-info h2 {
   margin-left: 10px;
+}
+
+.actions {
+  height: 40px;
+}
+
+.player-pass {
+  background-color: #feb041;
+  color: white;
+  border: 1px solid;
+  border-radius:10px;
+}
+
+.draw-card {
+  background-color: #feb041;
+  color: white;
+  border: 1px solid;
+  border-radius;
+}
+
+#suit-dialog {
+  display: none;
+}
+
+.menu-button {
+  position: relative;
+  background-color: #feb041;
+  border: 3px double #fc331d;
+  border-radius:10px;
+  color: white;
+  font-size: 20px;
+}
+
+.readRules {
+  position: relative;
+  background-color: #feb041;
+  border: 3px double #fc331d;
+  border-radius:10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.row-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.instructions-container {
+  width: 800px;
+  margin: 10px auto;
+  position: relative;
 }

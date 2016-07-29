@@ -1,71 +1,60 @@
-function overlay() {
-  console.log( 'clicked')
-  el = document.getElementById("overlay");
-  el.style.display = el.style.display === 'block' ? 'none' : 'block'
+var game;
+
+var renderBoard = function( currentGame ) {
+
+  var html = Handlebars.templates[ 'game_board' ]( currentGame )
+  $('.tablebox').html( html )
+
+  hookCards()
+  hookButtons()
 }
 
-var playerHand = new Array(7);
-var opponentHand = new Array(7);
-var deck = new Array(52);
+var hookCards = function() {
+  $('.player-card').off( 'click' )
 
-function fname() {
-  return this.num + this.suit + ".gif";
+  if( game.playerCanGo ) {
+    $('.player-card').on( 'click', function() {
+      var data = $(this).data()
+
+      game.playCard( game.findUserCard( data ), function( result ) {
+        renderBoard( result )
+      })
+    })
+  }
 }
 
+var hookButtons = function() {
+  $('.actions button').off( 'click' )
 
-function Card(num,suit) {
-   this.num = num;
-   this.suit = suit;
-   this.fname = fname;
+  $('button.player-pass').on( 'click', function() {
+    game.playerPass( renderBoard )
+  })
+
+  $('button.draw-card').on( 'click', function() {
+    game.drawPlayerCard( renderBoard )
+  })
 }
 
-function drawCard() {
-  shuffle();
-  setImage(cardImage,o)
+var showSuitDialog = function( chooseValueCallback ) {
+  $('#suit-dialog').show()
+
+  $('#suit-dialog button').on( 'click', function() {
+    chooseValueCallback( $(this).val() )
+
+    $('#suit-dialog button').off( 'click' )
+    $('#suit-dialog').hide()
+  })
 }
-//removes card from unplayed-deck, displays it in hand instead
 
-function Pass () {
+var hookStartGameButton = function() {
+  $('#start-game').on( 'click', function( event ) {
+    game = new Game( showSuitDialog )
+    game.start()
 
+    renderBoard( game )
+  })
 }
-  //switches Turn to opponent 
 
-
-function playCard () {
-
-}
-//moves clicked card from hand and into played-cards, becomes the last-played-card
-
-
-
-// function Deal() {
-// var Card1Image=document.getElementById("card1")
-// var Card2Image=document.getElementById("card2")
-// var Card3Image=document.getElementById("card3")
-// var Card4Image=document.getElementById("card4")
-// var Card5Image=document.getElementById("card5")
-// var Card6Image=document.getElementById("card6")
-// var Card7Image=document.getElementById("card7")
-// assignCards();
-// }
-
-// function assignCards() {
-// for(var i = 0;i<53;++i)
-// Cards[i]="Card"+(i+1)+"this.suit";
-
-// for(var i = 0;i<26;++i)
-// Cards[i]="Card"+(i-12)+"this.suit";
-
-// for(var i = 0;i<39;++i)
-// Cards[i]="Card"+(i-23)+"this.suit";
-
-// for(var i = 0;i<52;++i)
-// Cards[i]="Card"+(i-34)+"this.suit";
-
-// for(var i = 0;i<39;++i)
-// Cards[i]="Card"+(i-23)+"this.suit";
-
-// for(var i = ;i<52;++i)
-// Cards[i]="Card"+(i-34)+"this.suit";
-// }
-
+$(document).ready( function() {
+  hookStartGameButton()
+})
