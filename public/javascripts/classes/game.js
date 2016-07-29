@@ -104,7 +104,7 @@ Game.prototype.doOpponentMove = function() {
 
       if( this.opponent.handEmpty() ) {
         this.gameOver = true
-        this.message = "YOU LOSE"
+        this.message = "Game over, sucker! (You're not a sucker, but you did lose.) Try again!"
       }
     } else {
       cardsDrawn++
@@ -147,7 +147,7 @@ Game.prototype.playValidCard = function( card, suit, reRenderCallback ) {
   this.player.playCard( card )
 
   if( this.player.handEmpty() ) {
-    this.message = 'YOU WON'
+    this.message = 'You won, you foxy genius!'
     this.gameOver = true
     reRenderCallback( this )
   } else {
