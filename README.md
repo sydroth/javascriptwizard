@@ -10,24 +10,24 @@ SPECIFICATIONS
  - [X] User and machine are each given seven randomly generated cards. 
  - [X] User can play a card from their deck.
  - [X] User can draw from the deck if they can't play a card.
- - [ ] User can pass if they cannot play a card after three draws.
- - [ ] User can set the suite if an eight is played.
- - [ ] Opponent can determine if it has a valid card.
- - [ ] Opponent will play a valid card if it has one.
- - [ ] Opponent will draw a card from deck if it has no playable cards, up to three times until it gets a valid card.
- - [ ] Opponent will pass if it cannot play a card.
+ - [X] User can pass if they cannot play a card after three draws.
+ - [X] User can set the suite if an eight is played.
+ - [X] Opponent can determine if it has a valid card.
+ - [X] Opponent will play a valid card if it has one.
+ - [X] Opponent will draw a card from deck if it has no playable cards, up to three times until it gets a valid card.
+ - [X] Opponent will pass if it cannot play a card.
  
 STRETCH SPECS
 
  - [ ] Animation/UI corresponding to events in game
- - [ ] Deploying the web app via Heroku or similar service
+ - [X] Deploying the web app via Heroku or similar service
  - [ ] Unit testing
  - [ ] User authentication login/logout
  - [ ] Multiplayer
  
 LICENSE
  
- - [ ] The artifact produced is properly licensed, preferably with the MIT license.
+ - [X] The artifact produced is properly licensed, preferably with the MIT license.
 
 SKETCHS 
  
