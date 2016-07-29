@@ -1,6 +1,9 @@
 function Card( number, suit ) {
   this.number = number
   this.suit = suit
+  this.sortOrder = (Card.NUMBERS.indexOf(number) + 1);
+  this.sortOrder = suit+' '+(this.sortOrder < 10 ? '0'+this.sortOrder : this.sortOrder)
+
   this.cardClass = this.className()
 }
 

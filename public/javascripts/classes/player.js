@@ -30,3 +30,7 @@ Player.prototype.playCard = function( card ) {
   this.hand = this.hand.slice( 0, index )
     .concat( this.hand.slice( index + 1 ))
 }
+
+Player.prototype.handEmpty = function() {
+  return this.hand.length === 0
+}

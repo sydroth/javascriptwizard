@@ -1,6 +1,7 @@
 var game;
 
 var renderBoard = function( currentGame ) {
+
   var html = Handlebars.templates[ 'game_board' ]( currentGame )
   $('.tablebox').html( html )
 
@@ -26,19 +27,28 @@ var hookButtons = function() {
   $('.actions button').off( 'click' )
 
   $('button.player-pass').on( 'click', function() {
-    console.log( 'PLAYER PASS')
     game.playerPass( renderBoard )
   })
 
   $('button.draw-card').on( 'click', function() {
-    console.log( "DRAW CARD")
     game.drawPlayerCard( renderBoard )
+  })
+}
+
+var showSuitDialog = function( chooseValueCallback ) {
+  $('#suit-dialog').show()
+
+  $('#suit-dialog button').on( 'click', function() {
+    chooseValueCallback( $(this).val() )
+
+    $('#suit-dialog button').off( 'click' )
+    $('#suit-dialog').hide()
   })
 }
 
 var hookStartGameButton = function() {
   $('#start-game').on( 'click', function( event ) {
-    game = new Game()
+    game = new Game( showSuitDialog )
     game.start()
 
     renderBoard( game )

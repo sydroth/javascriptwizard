@@ -20,6 +20,15 @@ Deck.prototype.shuffle = function() {
   }
 }
 
+Deck.prototype.refreshDeck = function( cards ) {
+  this.cards = cards
+  this.shuffle()
+}
+
+Deck.prototype.empty = function() {
+  return this.cards.length === 0
+}
+
 Deck.prototype.takeCard = function() {
   return this.cards.pop()
 }
