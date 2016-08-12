@@ -39,3 +39,11 @@ User Interface:
 State loop:
 ![fullsizerender](https://cloud.githubusercontent.com/assets/18561576/17112477/14b86e20-525b-11e6-9d74-f7ee618d415d.jpg)
 
+COMPETENCIES DEVELOPED
+
+[ ] Javascript
+[ ] Heroku
+[ ] Simple AI
+[ ] package.json
+[ ] pair programming
+
